@@ -13,8 +13,8 @@ spec:
       labels:
         app: guestbook
         tier: frontend
-        bat: cave
-        iron: stark
+        foo: bar
+        asd: zxc
     spec:
       containers:
       - name: php-redis
