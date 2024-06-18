@@ -13,7 +13,8 @@ spec:
       labels:
         app: guestbook
         tier: frontend
-        foo: bar
+        fee: bee
+        test: fail
     spec:
       containers:
       - name: php-redis
