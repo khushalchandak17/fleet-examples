@@ -13,7 +13,7 @@ spec:
       labels:
         app: guestbook
         tier: frontend
-        cave: bat
+        fox: jungle
         iron: stark
     spec:
       containers:
