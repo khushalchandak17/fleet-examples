@@ -15,7 +15,7 @@ spec:
         app: redis
         role: master
         tier: backend
-        bat: cave
+        bat2: cave2
     spec:
       containers:
       - name: master
