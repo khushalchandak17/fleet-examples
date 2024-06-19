@@ -13,7 +13,7 @@ spec:
       labels:
         app: guestbook
         tier: frontend
-        fox: cave3
+        fox2: cave4
         stark: man
     spec:
       containers:
