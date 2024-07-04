@@ -13,7 +13,7 @@ spec:
       labels:
         app: guestbook
         tier: frontend
-        fox: Jungle
+        fox2: Jungle2
         stark: iron
     spec:
       containers:
