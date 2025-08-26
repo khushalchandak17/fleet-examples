@@ -3,7 +3,7 @@
 set -euo pipefail
 
 BASE_DIR="test-10613"
-TOTAL=70
+TOTAL=50
 BUNDLE_PREFIX="redis-bundle"
 NS_PREFIX="redis-ns"
 IMAGE="redis:7.0"

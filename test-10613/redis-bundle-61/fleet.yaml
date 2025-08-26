@@ -1,5 +1,0 @@
-defaultNamespace: redis-ns-61
-helm:
-  releaseName: test-ds-redis-bundle-61
-  install:
-    createNamespace: true
