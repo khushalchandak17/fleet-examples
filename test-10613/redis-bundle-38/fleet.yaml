@@ -1,0 +1,7 @@
+# Fleet bundle for redis-ns-38
+defaultNamespace: redis-ns-38
+# (Optional) you can add targetCustomizations if you want to scope to certain clusters,
+# e.g.:
+# targetCustomizations:
+# - name: all-clusters
+#   clusterSelector: {}
