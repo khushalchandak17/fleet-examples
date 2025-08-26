@@ -1,7 +1,5 @@
-# Fleet bundle for redis-ns-13
 defaultNamespace: redis-ns-13
-# (Optional) you can add targetCustomizations if you want to scope to certain clusters,
-# e.g.:
-# targetCustomizations:
-# - name: all-clusters
-#   clusterSelector: {}
+helm:
+  releaseName: test-ds-redis-bundle-13
+  install:
+    createNamespace: true

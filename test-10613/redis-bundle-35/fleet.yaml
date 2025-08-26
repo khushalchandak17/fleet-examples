@@ -1,7 +1,5 @@
-# Fleet bundle for redis-ns-35
 defaultNamespace: redis-ns-35
-# (Optional) you can add targetCustomizations if you want to scope to certain clusters,
-# e.g.:
-# targetCustomizations:
-# - name: all-clusters
-#   clusterSelector: {}
+helm:
+  releaseName: test-ds-redis-bundle-35
+  install:
+    createNamespace: true
