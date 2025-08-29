@@ -20,20 +20,6 @@ targetCustomizations:
         - "values2.yaml"
         - "values.test3.yaml"
 
-  - name: istio-cni-values-override-configmap
-    clusterSelector:
-      matchLabels:
-        istio-cni-values-override-configmap: 'true2'
-    helm:
-      values:
-        asd:
-          env: LT4
-          loc: tt
-        dummyKey:
-          foo: bar
-      valuesFiles:
-        - "values2.yaml"
-        - "values.test3.yaml"
 
   - clusterSelector:
       matchLabels: {}
