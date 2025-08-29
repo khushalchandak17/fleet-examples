@@ -13,7 +13,7 @@ targetCustomizations:
       values:
         asd:
           env: LT2
-          loc: tt
+          loc: tt2
         dummyKey:
           foo: bar
       valuesFiles:
