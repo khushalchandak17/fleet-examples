@@ -27,7 +27,7 @@ targetCustomizations:
     helm:
       values:
         asd:
-          env: LT3
+          env: LT4
           loc: tt
         dummyKey:
           foo: bar
