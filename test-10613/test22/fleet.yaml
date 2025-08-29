@@ -19,8 +19,8 @@ targetCustomizations:
           foo: bar
       # Reuse existing upstream values.yaml
       valuesFiles:
-        - "../../helm/values.yaml"    # your local chart's values.yaml
-        - "values.test.yaml"          # optional additional test file
+        - "values2.yaml"    # your local chart's values.yaml
+        - "values.test3.yaml"          # optional additional test file
 
   - clusterSelector:
       matchLabels: {}
