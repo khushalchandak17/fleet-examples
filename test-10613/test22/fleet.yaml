@@ -12,7 +12,7 @@ targetCustomizations:
       # Inline overrides
       values:
         asd:
-          env: LT
+          env: LT2
           loc: tt
         # Add dummy values here that do not exist in the chart
         dummyKey:
