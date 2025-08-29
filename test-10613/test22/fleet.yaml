@@ -1,13 +1,27 @@
-defaultNamespace: kube-system  # ✅ valid, this sets the namespace where the Helm release will be installed
+defaultNamespace: kube-system
 helm:
-  releaseName: rabbitmq-operator  # ✅ valid
-  chart: oci://registry-1.docker.io/bitnamicharts/rabbitmq-cluster-operator  # ✅ OCI chart URL, valid syntax
+  releaseName: rabbitmq-operator
+  chart: oci://registry-1.docker.io/bitnamicharts/rabbitmq-cluster-operator
 
 targetCustomizations:
-  - name: istio-cni-values-override-configmap  # ✅ optional name for this customization
+  - name: istio-cni-values-override-configmap
     clusterSelector:
       matchLabels:
-        istio-cni-values-override-configmap: 'true'  # ✅ valid label selector
+        istio-cni-values-override-configmap: 'true'
+    helm:
+      # Inline overrides
+      values:
+        asd:
+          env: LT
+          loc: tt
+        # Add dummy values here that do not exist in the chart
+        dummyKey:
+          foo: bar
+      # Reuse existing upstream values.yaml
+      valuesFiles:
+        - "../../helm/values.yaml"    # your local chart's values.yaml
+        - "values.test.yaml"          # optional additional test file
+
   - clusterSelector:
-      matchLabels: {}  # ⚠️ technically valid, matches all clusters
-    doNotDeploy: true  # ✅ correct usage to skip deployment for all other clusters
+      matchLabels: {}
+    doNotDeploy: true
