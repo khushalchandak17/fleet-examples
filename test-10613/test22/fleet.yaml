@@ -21,6 +21,24 @@ targetCustomizations:
       valuesFiles:
         - "values2.yaml"    # your local chart's values.yaml
         - "values.test3.yaml"          # optional additional test file
+   - name: istio-cni-values-override-configmap
+    clusterSelector:
+      matchLabels:
+        istio-cni-values-override-configmap: 'true2'
+    helm:
+      # Inline overrides
+      values:
+        asd:
+          env: LT3
+          loc: tt
+        # Add dummy values here that do not exist in the chart
+        dummyKey:
+          foo: bar
+      # Reuse existing upstream values.yaml
+      valuesFiles:
+        - "values2.yaml"    # your local chart's values.yaml
+        - "values.test3.yaml"          # optional additional test file
+   
 
   - clusterSelector:
       matchLabels: {}
